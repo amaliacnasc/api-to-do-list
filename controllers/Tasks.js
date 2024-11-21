@@ -40,7 +40,7 @@ exports.getAllTasks = async(req,res)=>{
         const tasks = await prisma.post.findMany()
         res.status(200).json(tasks)
     }catch(error){
-        res.json(500).json({message:error.message})
+        res.status(500).json({message:error.message})
     }
 };
 
