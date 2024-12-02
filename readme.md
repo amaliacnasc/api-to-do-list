@@ -50,7 +50,7 @@
   </ul>
 
   <h2>Autor</h2>
-  <p>Nome do Autor: Não especificado</p>
+  <p>Nome do Autor: Amália Nascimento</p>
 
   <h2>Licença</h2>
   <p>Licenciado sob a licença ISC.</p>
