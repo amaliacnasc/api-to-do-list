@@ -24,6 +24,7 @@ model Post {
   title     String
   content   String?
   authorId  String?
+  imageUrl  String? 
   type      Type
   author    User?     @relation(fields: [authorId], references: [userId])
 }

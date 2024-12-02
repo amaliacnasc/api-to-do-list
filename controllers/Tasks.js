@@ -67,11 +67,13 @@ exports.deleteTaskById = async(req,res) =>{
     try{
         const task = await prisma.post.delete({
             where:{id: req.params.id}
+       
         });
-        if (!user){
+        console.log(task)
+        if (!task){
             res.status(404).json({message:'Tarefa não encontrado'}); 
         }
-        res.status(200).json({message:`Tarefa${post.name} deletado com sucesso `});
+        res.status(200).json({message:`Tarefa deletado com sucesso `});
     }catch(error){
         res.status(500).json({ message: error.message });
     }
